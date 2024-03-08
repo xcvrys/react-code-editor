@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #1e1e1e;
+  color: gray;
+}
+.code-editor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 100vw;
+  padding: 20px;
+  width: calc(100% - 46px);
+}
+
+.code-editor > div {
+  width: 100%;
+}
+
+.menu-list {
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.menu-item {
+  all: unset;
+  cursor: pointer;
+  font-size: 12px;
+  color: #6a6a6a;
+}
+.menu-item.active {
+  color: #d4d4d4;
+  font-weight: 700;
+}
+.editor {
+  width: 50px;
+}
+
+.output-container {
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 8px;
+  height: calc(100vh - 96px);
+}
+.output-wrapper {
+  position: relative;
+}
+
+.run-button {
+  all: unset;
+  width: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 50%;
+  left: -62px;
+
+  padding: 8px 16px;
+  border: 2px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  color: gray;
+  font-size: 16px;
+  background-color: #1e1e1e;
+  z-index: 9999;
+}
